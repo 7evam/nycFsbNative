@@ -1,0 +1,16 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "db:init": "dropdb --if-exists nycFsbNative && createdb nycFsbNative",
+    "db:reset": "./scripts/resetDB"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "pg": "^7.7.1",
+    "sequelize": "^4.42.0"
+  }
+}
